@@ -2,7 +2,7 @@
 title: Feliz Navidad или первое Рождество в Куско
 description: Друзья в Куско позвали праздновать Рождество с их семьёй.
 date: 2023-12-25
-tags: заметки
+tags: заметки, куско, перу
 thumb: feliznavidad.png
 ---
 
