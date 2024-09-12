@@ -41,19 +41,20 @@
 		<a href="#skip" class="visually-hidden">Перемотать к основному контенту</a>
 
 		<header>
-			<a href="/" class="home-link">
-				<img src="/img/logo-bw.png" alt="{{ metadata.title }}" class="main-logo" />
+			<a href="/" class="main-logo-link">
+				<img src="/img/logo-bw.png" alt="" class="main-logo" />
+				<img src="/img/pdp.svg" alt="{{ metadata.title }}" class="main-logo-text" />
 			</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
+			{# <nav>
 				<h2 class="visually-hidden">Главное меню</h2>
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
 				</ul>
-			</nav>
+			</nav> #}
 		</header>
 
 		<main id="skip">

@@ -21,6 +21,7 @@ function isFullUrl(url) {
 module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("**/*.svg");
+	eleventyConfig.addPassthroughCopy("**/*.png");
 
 	// Eleventy Image shortcode
 	// https://www.11ty.dev/docs/plugins/image/

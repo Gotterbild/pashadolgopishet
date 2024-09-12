@@ -3,6 +3,7 @@ title: Получение ВНЖ Перу
 description: Инструкция как получить ВНЖ в Перу
 date: 2023-10-28
 tags: инструкции
+thumb: id.png
 ---
 
 Ссылка на Телеграф: https://telegra.ph/Poluchenie-VNZH-Peru-10-28

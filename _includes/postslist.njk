@@ -1,15 +1,14 @@
-{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
-<ol reversed class="postlist">
+<div class="postlist">
 {% for post in postslist | reverse %}
-	{# <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}"> #}
+	<article class="postlist-post">
 		<a href="{{ post.url }}" class="postlist-link">
-			<img src="{{ post.url }}/thumb.svg" alt="" class="post-thumb" />
-			{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+			<img src="{%- if post.data.thumb %}{{ post.url }}/{{post.data.thumb}}{% else %}/img/thumb.png{%- endif %}" alt="" class="post-thumb" />
+			{% if post.data.title %}<h2 c>{{post.data.title}}</h2>{% else %}<code>{{ post.url }}</code>{% endif %}
 		</a>
 		<div>
 			<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
 		</div>
 		{# <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time> #}
-	{# </li> #}
+	</article>
 {% endfor %}
-</ol>
+</div>
