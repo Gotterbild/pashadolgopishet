@@ -307,6 +307,25 @@ header {
 	margin-right: 1em;
 }
 
+.post-content {
+	margin: 2em 0;
+}
+.post-content picture {
+	display: block;
+	text-align: center;
+}
+.post-content img {
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+video {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
+	max-height: 90vh;
+}
+
 /* Direct Links / Markdown Headers */
 .header-anchor {
 	text-decoration: none;

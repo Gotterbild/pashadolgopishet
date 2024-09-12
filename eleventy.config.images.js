@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("**/*.svg");
 	eleventyConfig.addPassthroughCopy("**/*.png");
+	eleventyConfig.addPassthroughCopy("**/*.mp4");
 
 	// Eleventy Image shortcode
 	// https://www.11ty.dev/docs/plugins/image/
