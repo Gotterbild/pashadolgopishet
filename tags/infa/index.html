@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tagged “инфа”</title>
+		<meta name="description" content="Личный блог. Пишу про то, что мне интересно: IT, путешествия иногда немного политоты. В данный момент живу в Перу.">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/eleventy-base-blog/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/eleventy-base-blog/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/eleventy-base-blog/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/eleventy-base-blog/site.webmanifest">
+		<link rel="alternate" href="/eleventy-base-blog/feed/feed.xml" type="application/atom+xml" title="Паша долго пишет">
+		<link rel="alternate" href="/eleventy-base-blog/feed/feed.json" type="application/json" title="Паша долго пишет">
+		<style>* { box-sizing: border-box; }
+/* Defaults */
+:root {
+	--font-size: 18px;
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+
+	@font-face {
+	  font-family: Caveat;
+	  src: url('/fonts/caveat-variablefont_wght-webfont.woff2') format('woff2'),
+	       url('/fonts/caveat-variablefont_wght-webfont.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+/* Theme colors */
+:root {
+	--color-gray-5: #f5f5f5;
+	--color-gray-10: #eee;
+	--color-gray-20: #e0e0e0;
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: var(--color-gray-90);
+	--text-color-link-active: #0d5891;
+	--text-color-link-visited: var(--color-gray-90);
+
+	--syntax-tab-size: 2;
+	--box-bg-color: var(--color-gray-10);
+	--border-radius: 1rem;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		--text-color-link: #68AFD9;
+		--text-color-link-active: #89C4E6;
+		--text-color-link-visited: #418EBA;
+
+		--box-bg-color: #21292E;
+		--background-color: #20201D;
+	}
+}
+*/
+
+:root {
+	--main-logo-size: 4em;
+}
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+hr {
+	height: 1em;
+	margin: 2em 0;
+	width: 100%;
+	border: none;
+	background-image: url("/img/line.png");
+	background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Caveat, system-ui;
+/*  font-optical-sizing: auto;*/
+  font-style: normal;
+  font-weight: 700;
+}
+h1 { font-size: 2.5em }
+h2 { font-size: 2em }
+h3 { font-size: 1.5em }
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+.main-logo-link {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.main-logo {
+	height: var(--main-logo-size);
+	width: var(--main-logo-size);
+	border-radius: calc(var(--main-logo-size) / 2);
+}
+.main-logo-text {
+	width: calc(var(--main-logo-size) * 3);
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.postlist-post {
+	width: 100%;
+/*	background-color: var(--color-gray-5);*/
+	padding: 0.5em;
+	margin-bottom: 1em;
+	border-radius: var(--border-radius);
+	overflow: hidden;
+}
+
+.postlist-post h2 {
+	margin: 0;
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 1.1;
+
+	font-size: 1.5em;
+  font-family: "Caveat", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+	.postlist-post {
+		width: calc(50% - 1em);
+		margin-right: 1em;
+	}
+}
+
+.postlist-link {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.postlist-post .post-thumb {
+	width: 100%;
+	margin: 0;
+	border-radius: var(--border-radius);
+}
+.postlist-date {
+	font-family: monospace;
+	font-size: 0.8em;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+.post-thumb {
+	width: 100%;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.post-content {
+	margin: 2em 0;
+}
+.post-content picture {
+	display: block;
+	text-align: center;
+}
+.post-content img {
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+video {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1;
+	max-height: 90vh;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}
+
+.message-box {
+	display: block;
+	background-color: var(--box-bg-color);
+	color: var(--color-gray-90);
+	padding: 1em 0.625em; /* 16px 10px /16 */
+	border-radius: var(--border-radius);
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Перемотать к основному контенту</a>
+
+		<header>
+			<a href="/eleventy-base-blog/" class="main-logo-link">
+				<img src="/eleventy-base-blog/img/logo-bw.png" alt="" class="main-logo">
+				<img src="/eleventy-base-blog/img/pdp.svg" alt="Паша долго пишет" class="main-logo-text">
+			</a>
+			
+		</header>
+
+		<main id="skip">
+			
+<h1>Tagged “инфа”</h1>
+
+
+<div class="postlist">
+
+	<article class="postlist-post">
+		<a href="/eleventy-base-blog/blog/2024-06-21-pogoda-v-lime-i-kusko/" class="postlist-link">
+			<img src="/eleventy-base-blog/blog/2024-06-21-pogoda-v-lime-i-kusko/weather.png" alt="" class="post-thumb">
+			<h2 c="">Сравнение погоды в Лиме и Куско</h2>
+		</a>
+		<div>
+			<time class="postlist-date" datetime="2024-06-21">2024-06-21</time>
+		</div>
+		
+	</article>
+
+</div>
+
+<p>See <a href="/eleventy-base-blog/tags/">all tags</a>.</p>
+
+
+		</main>
+
+		<footer></footer>
+
+		<!-- This page `/eleventy-base-blog/tags/infa/` was built on 2024-09-13T22:52:29.348Z -->
+	</body>
+</html>
