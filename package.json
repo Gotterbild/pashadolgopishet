@@ -16,7 +16,7 @@
 	},
 	"author": {
 		"name": "Pavel Dolgov",
-		"email": "gotterbild@pm.me",
+		"email": "gotterbild@pm.me"
 	},
 	"engines": {
 		"node": ">=14"
