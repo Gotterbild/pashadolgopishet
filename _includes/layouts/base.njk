@@ -3,10 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }} - Паша Долго Пишет</title>
+		<title>{{ title or metadata.title }}{%- if page.url !== "/" %} - Паша Долго Пишет{%- endif %}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<meta name="generator" content="{{ eleventy.generator }}">
 		<link rel="canonical" href="https://pashadolgopishet.blog{{ page.url | htmlBaseUrl }}">
+
+		<link rel="preload" href="/fonts/caveat-variablefont_wght-webfont.woff2" as="font" type="font/woff2" crossorigin>
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -32,9 +34,9 @@
 		{#- Or add from node_modules #}
 
 		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
-		<style>{% getBundle "css" %}</style>
+		{# <style>{% getBundle "css" %}</style> #}
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
 		<script defer data-domain="pashadolgopishet.blog" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
 		<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
@@ -42,6 +44,8 @@
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Перемотать к основному контенту</a>
+
+
 
 		<header>
 			<a href="/" class="main-logo-link">
