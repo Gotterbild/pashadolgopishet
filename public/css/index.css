@@ -213,6 +213,9 @@ footer {
 	padding: 1em;
 	background-color: #eee;
 }
+.tg-logo {
+	width: 3rem;
+}
 
 /* Nav */
 .nav {

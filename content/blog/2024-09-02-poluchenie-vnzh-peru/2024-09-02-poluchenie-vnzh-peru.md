@@ -3,6 +3,7 @@ title: Получение ВНЖ Перу
 description: Инструкция как получить ВНЖ в Перу
 date: 2023-10-28
 thumb: id.png
+telegram_comments_url: https://t.me/paveldowl/1599?comment=2583
 tags:
   - инструкции
   - перу

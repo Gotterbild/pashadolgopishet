@@ -3,9 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }}</title>
+		<title>{{ title or metadata.title }} - Паша Долго Пишет</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<meta name="generator" content="{{ eleventy.generator }}">
+		<link rel="canonical" href="https://pashadolgopishet.blog{{ page.url | htmlBaseUrl }}">
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -15,7 +16,6 @@
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
-
 
 		{#-
 		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -65,7 +65,10 @@
 		</main>
 
 		<footer>
-			Буду рад, если будете делиться ссылками на мои статьи. При копировании текста обязательна ссылка на <a href="https://pashadolgopishet.blog">первоисточник</a>.
+			<p><a href="https://t.me/paveldowl" rel="nofollow" target="_blank">
+			<img src="/img/telegram_logo.svg" alt="Перейти в наш канал в Telegram" title="Перейти в наш канал в Telegram" class="tg-logo" />
+			</a></p>
+			<p>Буду рад, если будете делиться ссылками на мои статьи. При копировании текста обязательна ссылка на <a href="https://pashadolgopishet.blog">первоисточник</a>.</p>
 		</footer>
 
 		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
