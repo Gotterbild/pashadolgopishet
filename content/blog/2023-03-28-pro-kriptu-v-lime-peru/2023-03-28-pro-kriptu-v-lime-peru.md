@@ -3,8 +3,7 @@ title: Про крипту в Лиме, Перу
 description: Где и как обналичить крипту в столице Перу
 date: 2023-03-21
 thumb: bitcoin.png
-telegram_post_id: 1164
-telegram_comments_id: +32jZJMCxYIkxOWNi
+telegram_comments_url: https://t.me/paveldowl/1164?comment=1954
 tags:
   - инструкции
   - лима

@@ -23,10 +23,11 @@ layout: layouts/base.njk
 	Оставить комментарий к статье можно <a href="https://t.me/paveldowl/{{telegram_post_id}}" rel="nofollow" target="_blank">в Telegram</a>
 {%- endif %} #}
 
-{%- if telegram_comments_id %}
-	Оставить комментарий к статье можно <a href="https://t.me/{{telegram_comments_id}}" rel="nofollow" target="_blank">в Telegram</a>
+{%- if telegram_comments_url %}
+	Оставить комментарий к статье можно <a href="{{telegram_comments_url}}" rel="nofollow" target="_blank">в Telegram</a>
 {%- endif %}
 
+{# <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="7cMSjQ0P" data-limit="10"></script> #}
 
 {%- if collections.posts %}
 	{%- set previousPost = collections.posts | getPreviousCollectionItem %}
