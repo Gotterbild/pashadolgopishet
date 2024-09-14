@@ -32,6 +32,7 @@
 	--syntax-tab-size: 2;
 	--box-bg-color: var(--color-gray-10);
 	--border-radius: 1rem;
+	--box-shadow: 0 0.5em 1em rgba(0,0,0,0.3);
 }
 
 /*
@@ -210,8 +211,38 @@ footer {
 	padding: 1em;
 	background-color: #eee;
 }
+.footer-links {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.footer-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+.footer-link-img {
+	position: relative;
+	margin-right: 1em;
+}
 .tg-logo {
-	width: 3rem;
+	width: 1.5rem;
+}
+.footer-link sub {
+	position: absolute;
+	right: -0.5em;
+	bottom: -0.5em;
+}
+.footer-link-text {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: start;
+}
+.footer-link-text span {
+	width: fit-content;
 }
 
 /* Nav */
@@ -356,6 +387,13 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+
+.btn {
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	padding: 0.5em;
+/*	background-color: var(--color-gray-5) !important;*/
 }
 
 .message-box {

@@ -1,9 +1,10 @@
 <div class="postlist">
 {% for post in postslist | reverse %}
-	<article class="postlist-post">
+	<article class="postlist-post"{% if post.data.draft %} style="opacity: 0.5"{% endif %}>
 		<a href="{{ post.url }}" class="postlist-link">
 			<img src="{%- if post.data.thumb %}{{ post.url }}/{{post.data.thumb}}{% else %}/img/thumb.png{%- endif %}" alt="" class="post-thumb" />
-			{% if post.data.title %}<h2>{{post.data.title}}</h2>{% else %}<code>{{ post.url }}</code>{% endif %}
+
+			{% if post.data.title %}<h2>{% if post.data.draft %}[ЧЕРНОВИК] {% endif %}{{post.data.title}}</h2>{% else %}<code>{{ post.url }}</code>{% endif %}
 		</a>
 		<div>
 			<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
