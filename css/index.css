@@ -75,8 +75,9 @@ body {
 html {
 	overflow-y: scroll;
 }
-body {
+main {
 	max-width: 40em;
+	margin: auto;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -204,6 +205,13 @@ header {
 }
 .main-logo-text {
 	width: calc(var(--main-logo-size) * 3);
+}
+
+
+footer {
+	text-align: center;
+	padding: 1em;
+	background-color: #eee;
 }
 
 /* Nav */
