@@ -1,3 +1,4 @@
+* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-size: 18px;
