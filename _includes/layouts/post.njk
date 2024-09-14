@@ -19,13 +19,22 @@ layout: layouts/base.njk
 {{ content | safe }}
 </article>
 
-{%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li>Ранее: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li>Далее: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
+{# {%- if telegram_post_id %}
+	Оставить комментарий к статье можно <a href="https://t.me/paveldowl/{{telegram_post_id}}" rel="nofollow" target="_blank">в Telegram</a>
+{%- endif %} #}
+
+{%- if telegram_comments_id %}
+	Оставить комментарий к статье можно <a href="https://t.me/{{telegram_comments_id}}" rel="nofollow" target="_blank">в Telegram</a>
 {%- endif %}
+
+
+{%- if collections.posts %}
+	{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+	{%- set nextPost = collections.posts | getNextCollectionItem %}
+	{%- if nextPost or previousPost %}
+		<ul class="links-nextprev">
+			{%- if previousPost %}<li>Ранее: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+			{%- if nextPost %}<li>Далее: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+		</ul>
+	{%- endif %}
 {%- endif %}
