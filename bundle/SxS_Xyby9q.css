@@ -345,6 +345,10 @@ footer {
 }
 
 /* Tags */
+.postlist-tags {
+	text-align: center;
+	font-size: 0.7em;
+}
 .post-tag {
 	display: inline-flex;
 	align-items: center;
