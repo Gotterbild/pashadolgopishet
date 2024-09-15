@@ -6,12 +6,28 @@
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 
 	@font-face {
-	  font-family: Caveat;
-	  src: url('/fonts/caveat-variablefont_wght-webfont.woff2') format('woff2'),
-	       url('/fonts/caveat-variablefont_wght-webfont.woff') format('woff');
+	  font-family: 'Caveat';
+	  src: url('/fonts/cvt.eot');
+	  src: url('/fonts/cvt.eot?#iefix') format('embedded-opentype'),
+	      url('/fonts/cvt.woff2') format('woff2'),
+	      url('/fonts/cvt.woff') format('woff'),
+	      url('/fonts/cvt.ttf') format('truetype');
 	  font-weight: normal;
 	  font-style: normal;
+	  font-display: swap;
 	}
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('/fonts/cvt.eot');
+    src: url('/fonts/cvt.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/cvt.woff2') format('woff2'),
+        url('/fonts/cvt.woff') format('woff'),
+        url('/fonts/cvt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Theme colors */
