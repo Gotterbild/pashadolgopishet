@@ -3,7 +3,7 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Блог
   order: 1
-numberOfLatestPostsToShow: 20
+numberOfLatestPostsToShow: 25
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}

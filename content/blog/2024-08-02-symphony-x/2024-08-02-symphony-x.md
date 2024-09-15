@@ -6,6 +6,7 @@ telegram_comments_url: https://t.me/paveldowl/1776?comment=2799
 thumb: symphonyx.png
 tags:
   - заметки
+  - субъективное
   - лима
   - перу
 ---
