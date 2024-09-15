@@ -176,6 +176,12 @@ pre:not([class*="language-"]) {
 code {
 	word-break: break-all;
 }
+blockquote {
+	border-left: 0.25em solid;
+  margin-left: 1em;
+  padding: 1em;
+  background-color: var(--color-gray-10);
+}
 hr {
 	height: 1em;
 	margin: 2em 0;
@@ -409,8 +415,11 @@ h2 + .header-anchor {
 	border-radius: var(--border-radius);
 	box-shadow: var(--box-shadow);
 	padding: 0.5em;
+	text-decoration: none;
 /*	background-color: var(--color-gray-5) !important;*/
 }
+.width-auto { width: auto }
+.flex { display: flex }
 
 .message-box {
 	display: block;

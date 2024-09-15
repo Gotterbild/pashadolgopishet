@@ -19,12 +19,11 @@ layout: layouts/base.njk
 {{ content | safe }}
 </article>
 
-{# {%- if telegram_post_id %}
-	Оставить комментарий к статье можно <a href="https://t.me/paveldowl/{{telegram_post_id}}" rel="nofollow" target="_blank">в Telegram</a>
-{%- endif %} #}
-
 {%- if telegram_comments_url %}
-	Оставить комментарий к статье можно <a href="{{telegram_comments_url}}" rel="nofollow" target="_blank">в Telegram</a>
+	<a href="{{telegram_comments_url}}" rel="nofollow" target="_blank" class="btn flex width-auto">
+		<img src="/img/telegram_logo.svg" alt="" style="width: 1.5em; height: 1.5em; line-height: 0.5; margin-right: 0.5em" />
+		Оставить комментарий к статье в Telegram
+		</a>
 {%- endif %}
 
 {# <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="7cMSjQ0P" data-limit="10"></script> #}
