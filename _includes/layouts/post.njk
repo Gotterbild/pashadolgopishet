@@ -2,6 +2,8 @@
 layout: layouts/base.njk
 ---
 
+<article class="post-content">
+
 {# {% image "./thumb.svg", "alt text" %} #}
 <img src="{%- if thumb %}./{{thumb}}{%- endif %}" alt="" class="post-thumb" />
 <h1>{{ title }}</h1>
@@ -15,7 +17,6 @@ layout: layouts/base.njk
 	{%- endfor %}
 </ul>
 
-<article class="post-content">
 {{ content | safe }}
 </article>
 
