@@ -90,7 +90,7 @@ html {
 	overflow-y: scroll;
 }
 main {
-	max-width: 40em;
+	max-width: 100%;
 	margin: auto;
 }
 
@@ -195,6 +195,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Caveat, system-ui;
 /*  font-optical-sizing: auto;*/
   font-style: normal;
+  font-weight: 500;
+}
+h1 { 
+	font-size: 2.5em;
   font-weight: 700;
 }
 h1 { font-size: 2.5em }
@@ -316,12 +320,33 @@ footer {
   font-weight: 600;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 576px) {
 	.postlist-post {
 		width: calc(50% - 1em);
 		margin-right: 1em;
 	}
 }
+
+@media (min-width: 1024px) {
+	main {
+		max-width: 1024px;
+	}
+	.postlist-post {
+		width: calc(33% - 1em);
+		margin-right: 1em;
+	}
+}
+
+@media (min-width: 1280px) {
+	main {
+		max-width: 1280px;
+	}
+	.postlist-post {
+		width: calc(33% - 1em);
+		margin-right: 1em;
+	}
+}
+
 
 .postlist-link {
 	display: block;
@@ -382,17 +407,18 @@ footer {
 .post-content picture {
 	display: block;
 	text-align: center;
+	margin-bottom: 1em;
 }
 .post-content img {
 	margin: 0 auto;
 	max-width: 100%;
 	height: auto;
 }
-video {
+.post-content picture span {
 	display: block;
-	width: 100%;
-	aspect-ratio: 1;
-	max-height: 90vh;
+	font-style: italic;
+	line-height: 1;
+	font-size: 0.9em;
 }
 
 /* Direct Links / Markdown Headers */
