@@ -54,6 +54,29 @@ module.exports = function(eleventyConfig) {
 			decoding: "async",
 		};
 
-		return eleventyImage.generateHTML(metadata, imageAttributes);
+		return `<picture>
+			${Object.values(metadata)
+				.map((imageFormat) => {
+					return `  <source type="${
+						imageFormat[0].sourceType
+					}" srcset="${imageFormat
+						.map((entry) => entry.srcset)
+						.join(", ")}" sizes="${sizes}">`;
+				})
+				.join("\n")}
+				<img
+					src="${metadata.jpeg[0].url}"
+					width="${metadata.jpeg[0].width}"
+					height="${metadata.jpeg[0].height}"
+					alt="${alt}"
+					title="${alt}"
+					loading="lazy"
+					decoding="async">
+				<span>${alt}</span>
+			</picture>
+		`
+		// return eleventyImage.generateHTML(metadata, imageAttributes);
 	});
+	
+
 };
