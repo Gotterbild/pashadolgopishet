@@ -6,6 +6,7 @@ telegram_comments_url: https://t.me/paveldowl/1794?comment=2850
 thumb: id.png
 tags:
   - инструкции
+  - истории
   - перу
 ---
 

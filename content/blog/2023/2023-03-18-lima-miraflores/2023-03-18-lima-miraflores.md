@@ -7,6 +7,7 @@ telegram_comments_url: https://t.me/paveldowl/1283?comment=2098
 tags:
   - перу
   - лима
+  - инфа
 ---
 
 ## 💡 Основная информация

@@ -5,7 +5,7 @@ date: 2024-08-25
 thumb: microphone.png
 telegram_comments_url: https://t.me/paveldowl/1783?comment=2809
 tags:
-  - заметки
+  - истории
   - куско
   - перу
 ---

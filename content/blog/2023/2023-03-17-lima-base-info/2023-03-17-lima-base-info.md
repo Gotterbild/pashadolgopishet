@@ -7,6 +7,7 @@ telegram_comments_url: https://t.me/paveldowl/1171?comment=1970
 tags:
   - перу
   - лима
+  - инфа
 ---
 
 ## 💰 Про деньги
