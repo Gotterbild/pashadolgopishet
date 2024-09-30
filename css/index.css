@@ -295,6 +295,7 @@ footer {
 	flex-direction: row;
 	width: 100%;
 	flex-wrap: wrap;
+	margin: 0 auto;
 }
 
 .postlist-post {
@@ -327,9 +328,10 @@ footer {
 	}
 }
 
-@media (min-width: 1024px) {
-	main {
-		max-width: 1024px;
+@media (min-width: 960px) {
+	.postlist, .post-content {
+		max-width: 960px;
+		margin: 0 auto;
 	}
 	.postlist-post {
 		width: calc(33% - 1em);
@@ -338,7 +340,7 @@ footer {
 }
 
 @media (min-width: 1280px) {
-	main {
+	.postlist {
 		max-width: 1280px;
 	}
 	.postlist-post {
@@ -402,7 +404,7 @@ footer {
 }
 
 .post-content {
-	margin: 2em 0;
+	margin: 2em auto;
 }
 .post-content picture {
 	display: block;
