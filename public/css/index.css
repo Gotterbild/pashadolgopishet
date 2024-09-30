@@ -90,7 +90,7 @@ html {
 	overflow-y: scroll;
 }
 main {
-	max-width: 40em;
+	max-width: 100%;
 	margin: auto;
 }
 
@@ -316,12 +316,33 @@ footer {
   font-weight: 600;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 576px) {
 	.postlist-post {
 		width: calc(50% - 1em);
 		margin-right: 1em;
 	}
 }
+
+@media (min-width: 1024px) {
+	main {
+		max-width: 1024px;
+	}
+	.postlist-post {
+		width: calc(33% - 1em);
+		margin-right: 1em;
+	}
+}
+
+@media (min-width: 1280px) {
+	main {
+		max-width: 1280px;
+	}
+	.postlist-post {
+		width: calc(33% - 1em);
+		margin-right: 1em;
+	}
+}
+
 
 .postlist-link {
 	display: block;

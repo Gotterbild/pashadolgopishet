@@ -3,7 +3,7 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Блог
   order: 1
-numberOfLatestPostsToShow: 25
+numberOfLatestPostsToShow: 33
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
@@ -15,7 +15,7 @@ numberOfLatestPostsToShow: 25
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<p>Остальные {{ morePosts }} заметок можно найти <a href="/blog/">в архиве</a>.</p>
+<p style="text-align:center">Остальные {{ morePosts }} заметок можно найти <a href="/blog/">в архиве</a>.</p>
 {% endif %}
 
 {# List every content page in the project #}
