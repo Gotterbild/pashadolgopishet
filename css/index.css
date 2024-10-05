@@ -92,6 +92,7 @@ html {
 main {
 	max-width: 100%;
 	margin: auto;
+	box-shadow: 0 1em 5em -5em;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -191,6 +192,10 @@ hr {
 	background-size: cover;
 }
 
+.special-font {
+  font-family: Caveat, system-ui;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Caveat, system-ui;
 /*  font-optical-sizing: auto;*/
@@ -235,23 +240,29 @@ header {
 footer {
 	text-align: center;
 	padding: 1em;
-	background-color: #eee;
 }
 .footer-links {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
+	gap: 1em;
 }
 .footer-link {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: nowrap;
+	position: relative;
+}
+.footer-link.vertical {
+	flex-direction: column;
 }
 .footer-link-img {
+	height: var(--main-logo-size);
+  width: var(--main-logo-size);	
 	position: relative;
-	margin-right: 1em;
 }
 .tg-logo {
 	width: 1.5rem;
@@ -269,6 +280,10 @@ footer {
 }
 .footer-link-text span {
 	width: fit-content;
+}
+
+.margin-right {
+	margin-right: 1em;
 }
 
 /* Nav */
