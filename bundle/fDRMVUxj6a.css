@@ -286,6 +286,9 @@ footer {
 .margin-right {
 	margin-right: 1em;
 }
+.text-center {
+	text-align: center;
+}
 
 /* Nav */
 .nav {
