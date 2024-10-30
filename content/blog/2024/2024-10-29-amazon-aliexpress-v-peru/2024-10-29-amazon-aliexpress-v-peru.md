@@ -3,7 +3,7 @@ title: Заказы с Amazon и Aliexpress в Перу
 description: За более чем два года нахождения в Перу я уже успел множество раз заказать различный шмурдяк и электронику как с Амазона, так и с Алиэкспресса, и могу поделиться некоторыми неочевидными деталями
 date: 2024-10-29
 thumb: box.png
-#telegram_comments_url: https://t.me/paveldowl/1783?comment=2809
+telegram_comments_url: https://t.me/paveldowl/1798?comment=2865
 tags:
   - перу
   - инструкции
