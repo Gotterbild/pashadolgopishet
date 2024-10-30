@@ -18,14 +18,16 @@ layout: layouts/base.njk
 </ul>
 
 {{ content | safe }}
-</article>
 
 {%- if telegram_comments_url %}
-	<a href="{{telegram_comments_url}}" rel="nofollow" target="_blank" class="btn flex width-auto">
-		<img src="/img/telegram_logo.svg" alt="" style="width: 1.5em; height: 1.5em; line-height: 0.5; margin-right: 0.5em" />
+	<a href="{{telegram_comments_url}}" rel="nofollow" target="_blank" class="btn flex width-auto text-center">
+		<img src="/img/telegram_logo.svg" alt="" style="width: 1.5em; height: 1.5em; line-height: 0.5; margin-right: 0.5em; margin-left: 0" />
 		Оставить комментарий к статье в Telegram
 		</a>
 {%- endif %}
+
+</article>
+
 
 {# <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="7cMSjQ0P" data-limit="10"></script> #}
 
