@@ -18,7 +18,7 @@
 		"name": "Pavel Dolgov",
 		"email": "gotterbild@pm.me"
 	},
-	"license": "CC BY-CA",
+	"license": "CC BY-NC-SA",
 	"engines": {
 		"node": ">=14"
 	},
