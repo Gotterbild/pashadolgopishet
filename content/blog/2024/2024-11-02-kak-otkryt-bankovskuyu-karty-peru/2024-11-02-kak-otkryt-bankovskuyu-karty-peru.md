@@ -3,7 +3,7 @@ title: Банки Перу и как открыть банковскую кар�
 description: Как сделать банковскую карту в Перу без ВНЖ, как платить, где менять валюту
 date: 2024-11-02
 thumb: bank-card.png
-# telegram_comments_url: https://t.me/paveldowl/1798?comment=2865
+telegram_comments_url: https://t.me/paveldowl/1799?comment=2867
 tags:
   - перу
   - инструкции
