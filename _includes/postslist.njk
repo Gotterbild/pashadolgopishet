@@ -2,7 +2,7 @@
 {% for post in postslist | reverse %}
 	<article class="postlist-post"{% if post.data.draft %} style="opacity: 0.5"{% endif %}>
 		<a href="{{ post.url }}" class="postlist-link">
-			<img src="{%- if post.data.thumb %}{{ post.url }}/{{post.data.thumb}}{% else %}/img/thumb.png{%- endif %}" alt="" class="post-thumb" />
+			<img src="{%- if post.data.thumb %}{{ post.url }}/{{post.data.thumb}}{% else %}/img/thumb.png{%- endif %}" alt="" class="post-thumb"  loading="lazy" />
 
 			{% if post.data.title %}<h2>{% if post.data.draft %}[ЧЕРНОВИК] {% endif %}{{post.data.title}}</h2>{% else %}<code>{{ post.url }}</code>{% endif %}
 		</a>
