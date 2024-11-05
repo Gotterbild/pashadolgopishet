@@ -1,8 +1,8 @@
 ---
 draft: true
-title: Куско. Протесты.
-date: 2022-12-29
-thumb: protest.png
+title: Куско. Лошади.
+date: 2022-12-28
+thumb: loshadi.png
 tags:
   - истории
   - куско
