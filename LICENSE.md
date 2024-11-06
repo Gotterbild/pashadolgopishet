@@ -1,4 +1,4 @@
- Лицензия CC BY-NC-SA
+ # Лицензия CC BY-NC-SA
 
  [Полное описание](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru) 
 
