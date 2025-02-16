@@ -1,9 +1,10 @@
 ---
 draft: true
-title: Купание в Титикаке, Араму Муру и Чокито или что посмотреть в окрестностях Пуно (много фото)
+title: Купание в Титикаке, Араму Муру и Чокито или что посмотреть в окрестностях Пуно
 description: 
 date: 2025-02-08
-thumb: titikaka.png
+many_photos: true
+thumb: aramu-muru.png
 # telegram_comments_url: 
 tags:
   - перу

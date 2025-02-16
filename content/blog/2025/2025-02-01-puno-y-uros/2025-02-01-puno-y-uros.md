@@ -1,7 +1,8 @@
 ---
-title: Пуно и плавучий город Урос (много фото)
+title: Пуно и плавучий город Урос
 description: Можно ли посмотреть Пуно за один день, да ещё и заскочить в Урос? Давайте попробуем!
 date: 2025-02-01
+many_photos: true
 thumb: puno.png
 telegram_comments_url: https://t.me/paveldowl/1833
 tags:

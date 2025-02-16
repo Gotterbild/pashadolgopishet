@@ -8,14 +8,16 @@ layout: layouts/base.njk
 <img src="{%- if thumb %}./{{thumb}}{%- endif %}" alt="" class="post-thumb" />
 <h1>{{ title }}</h1>
 
-<ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | htmlDateString }}</time></li>
-	{# <li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li> #}
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-	{%- endfor %}
-</ul>
+<div class="post-metadata">
+	<time datetime="{{ page.date | htmlDateString }}">{{ page.date | htmlDateString }}</time>
+	<nav class="tags">
+		{# <li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li> #}
+		{%- for tag in tags | filterTagList %}
+			{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+			<a href="{{ tagUrl }}" class="tag">{{ tag }}</a>
+		{%- endfor %}
+	</nav>
+</div>
 
 {{ content | safe }}
 
