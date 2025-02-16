@@ -429,7 +429,8 @@ footer {
 	margin: 0;
 }
 .tag {
-  font-size: 0.66em;
+  font-family: Caveat, system-ui;
+  font-size: 0.75em;
   width: fit-content;
   display: inline-block;
 	background: #000;
