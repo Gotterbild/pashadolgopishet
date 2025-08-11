@@ -4,7 +4,7 @@ description:
 date: 2025-08-10
 many_photos: true
 thumb: id.png
-# telegram_comments_url: 
+telegram_comments_url: https://t.me/paveldowl/1958
 tags:
   - перу
   - инструкции
