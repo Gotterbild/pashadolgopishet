@@ -1,10 +1,9 @@
 ---
-draft: true
 title: Как получить водительские права в Перу
 description: 
 date: 2025-08-10
 many_photos: true
-# thumb: aramu-muru.png
+thumb: id.png
 # telegram_comments_url: 
 tags:
   - перу
