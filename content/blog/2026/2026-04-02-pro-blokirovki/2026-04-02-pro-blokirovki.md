@@ -1,9 +1,9 @@
 ---
 title: Про блокировки Telegram и VPN в РФ
-description: 
+description: Животрепещущая тема - блокировки! 
 date: 2026-04-02
 thumb: block-vpn.png
-telegram_comments_url: https://t.me/paveldowl/2074
+telegram_comments_url: https://t.me/c/1769035649/3425
 tags:
   - заметки
   - политота
