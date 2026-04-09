@@ -2,11 +2,18 @@
 permalink: /tags/
 layout: layouts/home.njk
 ---
-<h1>Все категории</h1>
+<h1 style="text-align: center;">Все теги</h1>
 
-<ul>
-{% for tag in collections.all | getAllTags | filterTagList %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+{% set allTags = collections.all | getAllTags | filterTagList %}
+{% set tagCounts = [] %}
+{% for tag in allTags %}
+	{% set tagPosts = collections[tag] %}
+	{% set tagCounts = (tagCounts.push({name: tag, count: tagPosts.length}), tagCounts) %}
+{% endfor %}
+
+<ul style="text-align: center; list-style: none; padding: 0;">
+{% for tagData in tagCounts | sort(attribute='count') | reverse %}
+	{% set tagUrl %}/tags/{{ tagData.name | slugify }}/{% endset %}
+	<li><a href="{{ tagUrl }}" class="post-tag">{{ tagData.name }}</a> ({{ tagData.count }})</li>
 {% endfor %}
 </ul>
