@@ -20,10 +20,11 @@ function isFullUrl(url) {
 
 module.exports = function(eleventyConfig) {
 
-	eleventyConfig.addPassthroughCopy("**/*.svg");
-	eleventyConfig.addPassthroughCopy("**/*.png");
-	eleventyConfig.addPassthroughCopy("**/CNAME");
-	eleventyConfig.addPassthroughCopy("**/*.mp4");
+	eleventyConfig.addPassthroughCopy("content/**/*.svg");
+	eleventyConfig.addPassthroughCopy("content/**/*.png");
+	eleventyConfig.addPassthroughCopy("content/**/*.jpg");
+	eleventyConfig.addPassthroughCopy("content/**/CNAME");
+	eleventyConfig.addPassthroughCopy("content/**/*.mp4");
 
 	// Eleventy Image shortcode
 	// https://www.11ty.dev/docs/plugins/image/
@@ -54,7 +55,7 @@ module.exports = function(eleventyConfig) {
 			decoding: "async",
 		};
 
-		return `<picture>
+		return `<picture data-pagefind-ignore>
 			${Object.values(metadata)
 				.map((imageFormat) => {
 					return `  <source type="${
@@ -71,7 +72,8 @@ module.exports = function(eleventyConfig) {
 					alt="${alt}"
 					title="${alt}"
 					loading="lazy"
-					decoding="async">
+					decoding="async"
+					data-pagefind-ignore>
 				<span>${alt}</span>
 			</picture>
 		`

@@ -3,16 +3,12 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Блог
   order: 1
-eleventyComputed:
-  yearNav: |
-    {% set currentYear = collections.posts | getPostYears | first %}
-    {% set style = "margin-bottom: 1em;" %}
-    {% include "yearNavigation.njk" %}
+
 ---
 {% set currentYear = collections.posts | getPostYears | first %}
 {% set postslist = collections.posts | filterByYear(currentYear) %}
 
-<h1 style="text-align: center;">{{ currentYear }}</h1>
+<h1 class="visually-hidden">{{ currentYear }}</h1>
 
 {% include "postslist.njk" %}
 
