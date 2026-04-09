@@ -80,6 +80,23 @@ module.exports = function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
+	// Get unique years from posts (sorted newest first)
+	eleventyConfig.addFilter("getPostYears", collection => {
+		let years = new Set();
+		for(let item of collection) {
+			let year = item.date.getFullYear();
+			years.add(year);
+		}
+		return Array.from(years).sort((a, b) => b - a);
+	});
+
+	// Filter posts by year
+	eleventyConfig.addFilter("filterByYear", (collection, year) => {
+		return collection.filter(item => {
+			return item.date.getFullYear() === parseInt(year);
+		});
+	});
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, {

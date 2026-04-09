@@ -1,0 +1,11 @@
+{% set allYears = collections.posts | getPostYears %}
+<nav class="special-font" style="text-align: center; font-size: 1.5em; {{ style }}">
+{%- for year in allYears %}
+	{%- if year == currentYear %}
+	<span class="bold">{{ year }}</span>
+	{%- else %}
+	<a href="/blog/{{ year }}/">{{ year }}</a>
+	{%- endif %}
+	{%- if not loop.last %} {% endif %}
+{%- endfor %}
+</nav>

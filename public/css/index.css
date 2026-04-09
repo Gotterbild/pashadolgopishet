@@ -498,6 +498,7 @@ h2 + .header-anchor {
 }
 .width-auto { width: auto }
 .flex { display: flex }
+.bold { font-weight: bold }
 
 .message-box {
 	display: block;

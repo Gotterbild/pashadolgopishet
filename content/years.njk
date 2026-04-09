@@ -1,0 +1,11 @@
+---
+---
+<h1 style="text-align: center;">{{ yearData.year }}</h1>
+
+{% set postslist = yearData.posts %}
+{% include "postslist.njk" %}
+
+{# Year navigation - bottom #}
+{% set currentYear = yearData.year %}
+{% set style = "margin-top: 2em;" %}
+{% include "yearNavigation.njk" %}
