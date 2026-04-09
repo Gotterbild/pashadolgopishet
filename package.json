@@ -5,7 +5,8 @@
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/",
-		"start": "rm -R ./_site/ && npx @11ty/eleventy --serve --quiet",
+		"start": "mkdir -p _site && npx @11ty/eleventy --serve --quiet",
+		"start:clean": "rm -R _site && npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
 		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
