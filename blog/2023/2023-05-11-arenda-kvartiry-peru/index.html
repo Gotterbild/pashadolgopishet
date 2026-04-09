@@ -15,26 +15,43 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Паша долго пишет">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Паша долго пишет">
 		
-		<link rel="stylesheet" href="/bundle/qwDTZByi24.css">
+		<link rel="stylesheet" href="/bundle/BNwLR8_eAd.css">
 
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Перемотать к основному контенту</a>
 
-		<header>
-			<a href="/" class="main-logo-link">
+		<header data-pagefind-ignore>
+			<div class="search-container">
+				<button id="search-icon" class="search-icon" aria-label="Поиск">
+					<img src="/img/search.png" alt="Поиск" />
+				</button>
+			</div>
+			
+			<a href="/" class="main-logo-link" data-pagefind-ignore>
 				<img src="/img/logo-bw.png" alt="" class="main-logo" />
 				<img src="/img/pdp.svg" alt="Паша долго пишет" class="main-logo-text" />
 			</a>
 			
 		</header>
 
+		<div id="search">
+			<div class="search-modal">
+				<button id="search-close" class="search-close" aria-label="Закрыть поиск">&times;</button>
+				<div class="search-content">
+					<input type="text" id="search-input" class="search-input" placeholder="Поиск по сайту..." autocomplete="off">
+					<div id="search-results-count" class="search-results-count"></div>
+					<div id="search-results-list" class="search-results-list"></div>
+				</div>
+			</div>
+		</div>
+
 		<main id="skip">
 			
 <article class="post-content">
 
 
-<img src="./house.png" alt="" class="post-thumb" />
+<img src="./house.png" alt="" class="post-thumb" data-pagefind-ignore />
 <h1>Про съём жилья в Перу вообще и Лиме в частности</h1>
 
 <div class="post-metadata">
@@ -94,12 +111,12 @@
 
 
 
-		<ul class="links-nextprev"><li>Ранее: <a href="/blog/2023/2023-03-28-pro-kriptu-v-lime-peru/">Про крипту в Лиме, Перу</a></li><li>Далее: <a href="/blog/2023/2023-09-25-katiny-zametki/">Катины заметки</a></li>
+		<ul class="links-nextprev" data-pagefind-ignore><li>Ранее: <a href="/blog/2023/2023-03-28-pro-kriptu-v-lime-peru/">Про крипту в Лиме, Перу</a></li><li>Далее: <a href="/blog/2023/2023-09-25-katiny-zametki/">Катины заметки</a></li>
 		</ul>
 
 		</main>
 
-		<footer>
+		<footer data-pagefind-ignore>
 			<div class="footer-links">
 				<a href="https://t.me/paveldowl" rel="nofollow" target="_blank" class="footer-link btn">
 					<div class="footer-link-img margin-right">
@@ -127,6 +144,8 @@
 
 		<script data-goatcounter="https://pashadolgopishet.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
-		<!-- This page `/blog/2023/2023-05-11-arenda-kvartiry-peru/` was built on 2026-04-09T02:49:54.384Z -->
+		<script src="/js/search.js"></script>
+
+		<!-- This page `/blog/2023/2023-05-11-arenda-kvartiry-peru/` was built on 2026-04-09T04:33:46.999Z -->
 	</body>
 </html>

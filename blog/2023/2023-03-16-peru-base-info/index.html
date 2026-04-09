@@ -15,26 +15,43 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Паша долго пишет">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Паша долго пишет">
 		
-		<link rel="stylesheet" href="/bundle/qwDTZByi24.css">
+		<link rel="stylesheet" href="/bundle/BNwLR8_eAd.css">
 
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Перемотать к основному контенту</a>
 
-		<header>
-			<a href="/" class="main-logo-link">
+		<header data-pagefind-ignore>
+			<div class="search-container">
+				<button id="search-icon" class="search-icon" aria-label="Поиск">
+					<img src="/img/search.png" alt="Поиск" />
+				</button>
+			</div>
+			
+			<a href="/" class="main-logo-link" data-pagefind-ignore>
 				<img src="/img/logo-bw.png" alt="" class="main-logo" />
 				<img src="/img/pdp.svg" alt="Паша долго пишет" class="main-logo-text" />
 			</a>
 			
 		</header>
 
+		<div id="search">
+			<div class="search-modal">
+				<button id="search-close" class="search-close" aria-label="Закрыть поиск">&times;</button>
+				<div class="search-content">
+					<input type="text" id="search-input" class="search-input" placeholder="Поиск по сайту..." autocomplete="off">
+					<div id="search-results-count" class="search-results-count"></div>
+					<div id="search-results-list" class="search-results-list"></div>
+				</div>
+			</div>
+		</div>
+
 		<main id="skip">
 			
 <article class="post-content">
 
 
-<img src="./peru-flag.png" alt="" class="post-thumb" />
+<img src="./peru-flag.png" alt="" class="post-thumb" data-pagefind-ignore />
 <h1>Перу - базовая информация</h1>
 
 <div class="post-metadata">
@@ -78,7 +95,7 @@
 <p>Живём мы в столице - Лиме. Про неё и <a href="/blog/2023/2023-03-17-lima-base-info">расскажу в следующий раз</a>.</p>
 
 	<a href="https://t.me/paveldowl/1155?comment=1938" rel="nofollow" target="_blank" class="btn flex width-auto text-center">
-		<img src="/img/telegram_logo.svg" alt="" style="width: 1.5em; height: 1.5em; line-height: 0.5; margin-right: 0.5em; margin-left: 0" />
+		<img src="/img/telegram_logo.svg" alt="" style="width: 1.5em; height: 1.5em; line-height: 0.5; margin-right: 0.5em; margin-left: 0" data-pagefind-ignore />
 		Оставить комментарий к статье в Telegram
 		</a>
 
@@ -86,12 +103,12 @@
 
 
 
-		<ul class="links-nextprev"><li>Ранее: <a href="/blog/2023/2023-01-04-eda/">Еда в Перу</a></li><li>Далее: <a href="/blog/2023/2023-03-17-lima-base-info/">Лима - про деньги и безопасность</a></li>
+		<ul class="links-nextprev" data-pagefind-ignore><li>Ранее: <a href="/blog/2023/2023-01-04-eda/">Еда в Перу</a></li><li>Далее: <a href="/blog/2023/2023-03-17-lima-base-info/">Лима - про деньги и безопасность</a></li>
 		</ul>
 
 		</main>
 
-		<footer>
+		<footer data-pagefind-ignore>
 			<div class="footer-links">
 				<a href="https://t.me/paveldowl" rel="nofollow" target="_blank" class="footer-link btn">
 					<div class="footer-link-img margin-right">
@@ -119,6 +136,8 @@
 
 		<script data-goatcounter="https://pashadolgopishet.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
-		<!-- This page `/blog/2023/2023-03-16-peru-base-info/` was built on 2026-04-09T02:49:54.384Z -->
+		<script src="/js/search.js"></script>
+
+		<!-- This page `/blog/2023/2023-03-16-peru-base-info/` was built on 2026-04-09T04:33:46.998Z -->
 	</body>
 </html>
