@@ -4,7 +4,8 @@
 	{%- if year == currentYear %}
 	<span class="bold">{{ year }}</span>
 	{%- else %}
-	<a href="/blog/{{ year }}/">{{ year }}</a>
+	{%- set yearHref = "/" if loop.first else "/blog/" + year + "/" %}
+	<a href="{{ yearHref }}">{{ year }}</a>
 	{%- endif %}
 	{%- if not loop.last %} {% endif %}
 {%- endfor %}

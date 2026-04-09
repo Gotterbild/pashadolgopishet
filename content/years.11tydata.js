@@ -12,10 +12,11 @@ module.exports = {
 				yearMap[year].push(post);
 			});
 			let years = Object.keys(yearMap).sort((a, b) => b - a);
-			const result = years.map((year, index) => ({
+			// Skip the first (newest) year since it's shown on homepage
+			const result = years.slice(1).map((year, index) => ({
 				year: parseInt(year),
 				posts: yearMap[year],
-				isNewest: index === 0
+				isNewest: false
 			}));
 			return result;
 		},
@@ -42,7 +43,9 @@ module.exports = {
 				if (year === data.yearData.year) {
 					nav += `<span class="bold">${year}</span>`;
 				} else {
-					nav += `<a href="/blog/${year}/">${year}</a>`;
+					// Link to homepage for the newest year, /blog/YEAR/ for others
+					const href = index === 0 ? '/' : `/blog/${year}/`;
+					nav += `<a href="${href}">${year}</a>`;
 				}
 				if (index < years.length - 1) {
 					nav += ' ';
