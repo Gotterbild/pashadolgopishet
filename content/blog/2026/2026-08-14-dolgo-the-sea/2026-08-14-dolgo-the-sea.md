@@ -104,7 +104,8 @@ Hoy presioné el botón «publicar» en todas las plataformas, así que para mí
 
 ## DOLGO - Море / The Sea / El Mar
 
-<iframe width="560" height="315" style="display:block;margin-left:auto;margin-right:auto" src="https://www.youtube.com/embed/LMZTm8kEuPg?si=3XJa8mFkHf6lMr55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="display:block;margin-left:auto;margin-right:auto;width:100%;
+aspect-ratio:1.8;" src="https://www.youtube.com/embed/LMZTm8kEuPg?si=3XJa8mFkHf6lMr55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <div class="grid">
 <a href="https://youtu.be/LMZTm8kEuPg" target="_blank" rel="nofollow"><img src="youtube.svg" alt="YouTube" style="width:10em"></a>
