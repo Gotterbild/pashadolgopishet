@@ -111,6 +111,7 @@ aspect-ratio:1.8;" src="https://www.youtube.com/embed/LMZTm8kEuPg?si=3XJa8mFkHf6
 <a href="https://youtu.be/LMZTm8kEuPg" target="_blank" rel="nofollow"><img src="youtube.svg" alt="YouTube" style="width:10em"></a>
 <a href="https://pashadolgo.bandcamp.com/track/the-sea-el-mar" target="_blank" rel="nofollow"><img src="bandcamp.svg" alt="BandCamp" style="width:10em"></a>
 <a href="https://www.patreon.com/pashadolgo" target="_blank" rel="nofollow"><img src="patreon.svg" alt="BandCamp" style="width:10em"></a>
+<a href="https://www.instagram.com/pasha.dolgo" target="_blank" rel="nofollow"><img src="instagram.svg" alt="BandCamp" style="width:10em"></a>
 </div>
 
 
