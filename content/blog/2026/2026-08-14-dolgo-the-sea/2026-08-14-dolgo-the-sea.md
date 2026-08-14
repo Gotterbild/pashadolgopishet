@@ -104,6 +104,8 @@ Hoy presioné el botón «publicar» en todas las plataformas, así que para mí
 
 ## DOLGO - Море / The Sea / El Mar
 
+<iframe width="560" height="315" style="display:block;margin-left:auto;margin-right:auto" src="https://www.youtube.com/embed/ld_-qdFvkfY?si=l6kO8lgMnQ0m1RQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <div class="grid">
 <a href="https://youtu.be/ld_-qdFvkfY" target="_blank" rel="nofollow"><img src="youtube.svg" alt="YouTube" style="width:10em"></a>
 <a href="https://pashadolgo.bandcamp.com/track/the-sea-el-mar" target="_blank" rel="nofollow"><img src="bandcamp.svg" alt="BandCamp" style="width:10em"></a>
