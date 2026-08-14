@@ -672,3 +672,13 @@ h2 + .header-anchor {
 	color: var(--color-gray-50);
 	padding: 2em 0;
 }
+
+.grid, 
+.grid > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
