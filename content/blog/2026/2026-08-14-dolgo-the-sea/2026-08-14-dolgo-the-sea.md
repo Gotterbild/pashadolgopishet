@@ -1,6 +1,6 @@
 ---
 title: DOLGO - Море / The Sea / El Mar
-description: Song and music vide premiere
+description: Song and music video premiere
 date: 2026-08-14
 thumb: dolgo-the-sea.png
 telegram_comments_url: https://t.me/paveldowl/2076
