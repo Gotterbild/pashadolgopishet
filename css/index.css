@@ -677,6 +677,7 @@ h2 + .header-anchor {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	margin-right: 1em;
 	margin-bottom: 1em;
 	padding: 1em;
