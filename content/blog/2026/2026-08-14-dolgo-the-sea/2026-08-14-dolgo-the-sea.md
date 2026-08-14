@@ -66,7 +66,7 @@ Today I've pushed the Publish button on all platforms, so for me the official re
 **Pterodarya** - flute, vocals, harmonium, kalimba, percussion, actor   
 **Olga Senderova** [@olgasenderova](https://www.instagram.com/olgasenderova) - vocals, percussion, actor   
 **Mariana Pecheniuk** [@mariana.pecheniuk](https://www.instagram.com/mariana.pecheniuk) - camera   
-**Polina Charina** [@politigris](https://www.instagram.com/politigris) - camera, актёр   
+**Polina Charina** [@politigris](https://www.instagram.com/politigris) - camera, actor   
 **Message From Stars** [@messagefromstars_](https://www.instagram.com/messagefromstars_) - costumes   
 
 [Links to music and video](#dolgo-more-the-sea-el-mar) 👇
