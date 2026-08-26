@@ -112,12 +112,15 @@ aspect-ratio:1.8;" src="https://www.youtube.com/embed/LMZTm8kEuPg?si=3XJa8mFkHf6
 <a href="https://pashadolgo.bandcamp.com/track/the-sea-el-mar" target="_blank" rel="nofollow"><img src="bandcamp.svg" alt="BandCamp" style="width:10em"></a>
 <a href="https://www.patreon.com/pashadolgo" target="_blank" rel="nofollow"><img src="patreon.svg" alt="BandCamp" style="width:10em"></a>
 <a href="https://www.instagram.com/pasha.dolgo" target="_blank" rel="nofollow"><img src="instagram.svg" alt="BandCamp" style="width:10em"></a>
+<a href="https://open.spotify.com/album/3ZUuKmk5qUsqYSnJWDTZxv" target="_blank" rel="nofollow"><img src="spotify.svg" alt="Spotify" style="width:10em"></a>
+<a href="https://music.apple.com/us/album/%D0%BC%D0%BE%D1%80%D0%B5-the-sea-el-mar/6805161448" target="_blank" rel="nofollow"><img src="apple-music.svg" alt="Apple Music" style="width:10em"></a>
+<a href="https://www.deezer.com/us/album/1062796151" target="_blank" rel="nofollow"><img src="deezer.svg" alt="Deezer" style="width:10em"></a>
+<a href="https://www.qobuz.com/us-en/album/-the-sea-el-mar-dolgo/yg4qumxo318ll" target="_blank" rel="nofollow"><img src="qobuz.svg" alt="Qobuz" style="width:8em"></a>
 </div>
 
 
+**[RU]** Доступно на всех стриминговых платформах. На Яндекс Музыке и других русских платформах - скоро.
 
-**[RU]** Ссылки на Spotify, Apple Music, SoundCloud, Deezer, Qobuz и другие стриминговые платформы появятся как только песня пройдёт модерацию на платформах.
+**[EN]** Available on all major streaming platforms.
 
-**[EN]** Links to Spotify, Apple Music, SoundCloud, Deezer, Qobuz and other streaming platforms will appear once song passes moderation there.
-
-**[ES]** Los enlaces a Spotify, Apple Music, SoundCloud, Deezer, Qobuz y otras plataformas de streaming aparecerán tan pronto como la canción pase la moderación en dichas plataformas.
+**[ES]** Disponible en las principales plataformas de streaming.
